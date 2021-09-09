@@ -1,5 +1,4 @@
-# GEOG_392
-## Marwon Haridi
+# GEOG 392 Marwon Haridi
 1. Lab 1
 2. Lab 2
 3. Lab 3
