@@ -27,7 +27,7 @@ class banana(fruit):
 class Shape:
     def __init__init(self):
         pass
-    def get_area(self):
+    def getArea(self):
         pass
 
 class Rectangle(Shape):
@@ -48,7 +48,7 @@ class Circle(Shape):
     def __init__(self, r):
         self.r = r
     def getArea(self):
-        return r * r * math.pi
+        return r
     
 
 #writing file example
@@ -61,9 +61,29 @@ o_handle.close()
 #File IO
 file = open("shapes.txt", "r")
 myread = file.readlines()
-for line in myread:
-    
 file.close()
+
+for line in myread:
+    #print(line)
+    data_items = line.split(",")
+    #print (data_items[0])
+    if data_items[0] == "Rectangle":
+        r = Rectangle(float(data_items[1]),float(data_items[2]))
+        print(r.getArea())
+    elif data_items[0] == "Triangle":
+        t= Triangle(float(data_items[1]),float(data_items[2]))
+        print(t.getArea())
+    else:
+        c = Circle(float(data_items[1]))
+        print(c)
+    
+'''
+i_handle = open("shapes.txt", "r")
+i_handle.seek(0)
+data_text = i_handle.read().strip.split("\n")
+print(data_txt)
+i_handle.close()
+'''
 
 
 
