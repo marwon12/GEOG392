@@ -48,7 +48,7 @@ class Circle(Shape):
     def __init__(self, r):
         self.r = r
     def getArea(self):
-        return r
+        return (self.r * self.r * math.pi)
     
 
 #writing file example
@@ -63,6 +63,7 @@ file = open("shapes.txt", "r")
 myread = file.readlines()
 file.close()
 
+#printing out the areas and going through the input file line by line
 for line in myread:
     #print(line)
     data_items = line.split(",")
@@ -75,8 +76,9 @@ for line in myread:
         print(t.getArea())
     else:
         c = Circle(float(data_items[1]))
-        print(c)
-    
+        print(c.getArea())
+ 
+#optional way to do file IO
 '''
 i_handle = open("shapes.txt", "r")
 i_handle.seek(0)
@@ -84,6 +86,3 @@ data_text = i_handle.read().strip.split("\n")
 print(data_txt)
 i_handle.close()
 '''
-
-
-
