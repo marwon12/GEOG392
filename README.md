@@ -1,5 +1,6 @@
 # GEOG 392 Marwon Haridi
-## Programming for geographic information science applications; principles of programming syntax and data structures; development of custom GIS programs; integration of programs into commercial GIS platforms.
+## GIS Programming
+### Programming for geographic information science applications; principles of programming syntax and data structures; development of custom GIS programs; integration of programs into commercial GIS platforms.
 1. [Lab 1](https://github.com/marwon12/GEOG392/tree/master/Lab1)
 2. [Lab 2](https://github.com/marwon12/GEOG392/tree/master/Lab2)
 3. [Lab 3](https://github.com/marwon12/GEOG392/tree/master/Lab3)
